@@ -1,26 +1,76 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  * {
+    font-family: 'Inter', sans-serif;
   }
-  body {
-    color: white;
-    background: black;
+  .content {
+    @apply px-3 md:px-16 lg:px-24;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  .box-components {
+    @apply border border-solid border-slate-300 rounded-md;
+  }
+  .component-items {
+    @apply flex gap-x-3 p-3 border-b border-solid border-slate-300;
+  }
+  .component-react * {
+    @apply p-3  m-0;
+    font-family: 'Fira Code';
+  }
+  .alert {
+    @apply p-3 rounded-md flex;
+  }
+  .alert-title {
+    @apply font-semibold mr-1;
+  }
+  .alert-info {
+    @apply bg-blue-100 text-blue-700;
+  }
+  .alert-danger {
+    @apply bg-red-300 text-red-600;
+  }
+  .alert-success {
+    @apply bg-green-300 text-green-600;
+  }
+  .alert-warning {
+    @apply bg-yellow-200 text-yellow-600;
+  }
+  .alert-secondary {
+    @apply bg-slate-300 text-black;
+  }
+  .btn {
+    @apply px-3 py-2 transition-all rounded-lg outline-none focus:ring-4;
+  }
+  .btn-full {
+    @apply px-4 py-2 transition-all rounded-full outline-none focus:ring-4;
+  }
+  .btn-primary {
+    @apply text-white bg-blue-600 focus:bg-blue-700 focus:ring-blue-400;
+  }
+  .btn-danger {
+    @apply text-white bg-red-600 focus:bg-red-700 focus:ring-red-400;
+  }
+  .btn-success {
+    @apply text-white bg-green-500 focus:bg-green-600 focus:ring-green-400;
+  }
+  .btn-warning {
+    @apply text-white bg-yellow-500 focus:bg-yellow-600 focus:ring-yellow-200;
+  }
+  .btn-secondary {
+    @apply text-white bg-neutral-500 focus:bg-neutral-600 focus:ring-neutral-300;
+  }
+  .btn-info {
+    @apply text-white bg-cyan-500 focus:bg-cyan-600 focus:ring-cyan-300;
+  }
+  .nav-link {
+    @apply mr-3 cursor-pointer border-2 border-transparent transition-all hover:border-b-2 hover:border-solid hover:border-b-blue-600;
   }
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Gebyar Matematika UIN Sunan Kalijaga website",
+    "slug": "gebyar-matematika-uin-sunan-kalijaga-website",
+    "description": "CBT app built for Gebyar Matematika UIN SUKA olympiad",
+    "url": {
+      "github": "#",
+      "website": "https://gebyarmatematikauinsk.com/"
+    },
+    "img": "https://blogger.googleusercontent.com/img/a/AVvXsEhKS1mGF4fX78llRueKKr8g46A2hOxY2TfKzwGfBKOglH6kXTnXtjcCG9NlKdwdA1WIR-lJuc4ucMaHH7m1c02hihzou1vQUredxym1js71Osao14yzY__TPLmIFJpPlmvr5ADdUrr8HyyEUWQwM-77QR_PToWeF2xlCElg-Hp2L2--zH978-DZ1ZaZ-A",
+    "stacks": "Laravel, Bootstrap",
+    "type": "Freelance Project"
+  },
+  {
+    "name": "Simple CBT",
+    "slug": "simple-cbt",
+    "description": "Simple CBT app built with Laravel",
+    "url": {
+      "github": "#",
+      "website": "https://simulasimatematika.000webhostapp.com/"
+    },
+    "img": "https://blogger.googleusercontent.com/img/a/AVvXsEjEwelLFtsZ-5T23S-v4FfAcTR9cBGlxLgVXe9yFqHJiTvuq7G24lrWKmQMzM42QiZlZH-8-IF5zpQ6trdIS9bUahHtHuwoLRBC5otAPaD_O9EKqA6K4GP3V0_vKU8aCB8eO8kJYiBUc1r8eu9GkBBIyNK_Jbta96mwG-n1rkm7KagGUaV4zbwYFHmKEA",
+    "stacks": "Laravel, Bootstrap",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Cayley Table Generator",
+    "slug": "cayley-table-generator",
+    "description": "Cayley's table calculator helps you to generate the Cayley's table",
+    "url": {
+      "github": "https://github.com/luthfikamaal/tabelcayleygenerator",
+      "website": "https://simulasimatematika.000webhostapp.com/"
+    },
+    "img": "https://blogger.googleusercontent.com/img/a/AVvXsEjxAjbn8fak2VslinhFOjwCIyruyYu4ZRa9nYXUDdrwMxcBpIb6CfbwH5b3xss_rIGrOD-rjmf2PlHtQShJFMMV9dYta4i6feqq-qqeHjWlek-rP0G5u13smtRiIr9vECF6cVzwPQLsLf1wC1cWWqMPg8cBeZLSwX_tXhxkcvZII3QT0OH5EESAAGxMiA",
+    "stacks": "PHP Native",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Quran Online",
+    "slug": "quran-online",
+    "description": "Al-Quran website with media audio Syekh Abdurrahman As-Sudais",
+    "url": {
+      "github": "https://github.com/luthfikamaal/quran-vuejs",
+      "website": "https://quranonline.vercel.app/"
+    },
+    "img": "https://blogger.googleusercontent.com/img/a/AVvXsEhuU0HKqy1gd1gVgtb3oJBIaQniVIBbr7jggzjClYO_NJHPXUnuzdVrVi-MT3FaejpnZIpP0uSC14_NLPEKrSEPVBQnrNSmgk8pXbiluCB5X57jgJPnM9y7eJGfnl6soM_WyyZY7ebRub-tWzdEdrpbDdGR8HH34jyg37j12cSneAra1VXNPlTLw0TYuw",
+    "stacks": "Vue, Quran API, TailwindCSS",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Bola-In",
+    "slug": "bola-in",
+    "description": "Website to find details of football players and some matches",
+    "url": {
+      "github": "https://github.com/luthfikamaal/bola-in",
+      "website": "https://bola-in.vercel.app/"
+    },
+    "img": "https://blogger.googleusercontent.com/img/a/AVvXsEiZ70eUOzgKjrEkMPk9-W_oCVUcMB9qYzAQ92PxsZEc7FwUVwuahQ2O_YmxH_u7HiXyc9Rx75gIUGFVNEaB-BZb32HFnvlq14tyacYb_9YzKyxP_qyxaNAo_I2AIqYjyT5EbPVie0xdv9mW7o7gw75guMkdaaVy6r9VBVgY1pPiOuRW5CusV8AV5tPL-g",
+    "stacks": "Vue, Sport DB, TailwindCSS",
+    "type": "Personal Project"
+  }
+]
