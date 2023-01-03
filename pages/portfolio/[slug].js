@@ -6,38 +6,14 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../../components/Footer';
 
-// export function getStaticProps() {
-//   const router = useRouter();
-
-//   const row = portfolios.find((e) => {
-//     return e.slug == router.query.slug;
-//   });
-//   return {
-//     props: {
-//       portfolio: row,
-//     },
-//   };
-// }
-
 export default function ShowPortfolio({ portfolio }) {
-  // const [portfolio, setPortfolio] = useState({});
   const router = useRouter();
-
-  // const getPortfolio = () => {
-  //   const row = portfolios.find((e) => {
-  //     return e.slug == router.query.slug;
-  //   });
-  //   setPortfolio(row);
-  // };
-
-  // useEffect(() => {
-  //   getPortfolio();
-  // }, [router.query.slug]);
 
   return (
     <>
       <Head>
         <title>{portfolio.name} - Luthfi's Hideout</title>
+        <meta property="og:image" content={portfolio.img} />
       </Head>
       <Navbar />
       <div className="content pt-16">
