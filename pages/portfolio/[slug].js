@@ -13,6 +13,9 @@ export default function ShowPortfolio({ portfolio }) {
     <>
       <Head>
         <title>{portfolio.name} - Luthfi's Hideout</title>
+        <meta property="og:title" content={portfolio.name} />
+        <meta property="og:description" content={portfolio.description} />
+        <meta property="og:type" content="Portfolio" />
         <meta property="og:image" content={portfolio.img} />
       </Head>
       <Navbar />
