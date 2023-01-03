@@ -6,20 +6,33 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../../components/Footer';
 
-const ShowPortfolio = () => {
-  const [portfolio, setPortfolio] = useState({});
+// export function getStaticProps() {
+//   const router = useRouter();
+
+//   const row = portfolios.find((e) => {
+//     return e.slug == router.query.slug;
+//   });
+//   return {
+//     props: {
+//       portfolio: row,
+//     },
+//   };
+// }
+
+export default function ShowPortfolio({ portfolio }) {
+  // const [portfolio, setPortfolio] = useState({});
   const router = useRouter();
 
-  const getPortfolio = () => {
-    const row = portfolios.find((e) => {
-      return e.slug == router.query.slug;
-    });
-    setPortfolio(row);
-  };
+  // const getPortfolio = () => {
+  //   const row = portfolios.find((e) => {
+  //     return e.slug == router.query.slug;
+  //   });
+  //   setPortfolio(row);
+  // };
 
-  useEffect(() => {
-    getPortfolio();
-  }, [router.query.slug]);
+  // useEffect(() => {
+  //   getPortfolio();
+  // }, [router.query.slug]);
 
   return (
     <>
@@ -46,6 +59,13 @@ const ShowPortfolio = () => {
       </div>
     </>
   );
-};
+}
 
-export default ShowPortfolio;
+ShowPortfolio.getInitialProps = (router) => {
+  const row = portfolios.find((e) => {
+    return e.slug == router.query.slug;
+  });
+  return {
+    portfolio: row,
+  };
+};
