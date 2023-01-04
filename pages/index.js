@@ -11,25 +11,6 @@ export default function Home() {
         <meta property="og:description" content="Tempat persembunyianku" />
         <meta property="og:type" content="Personal Web" />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/90312645?v=4" />
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta expr:content="data:blog.pageTitle" name="twitter:title" />
-        <meta content="@luthfikml_" name="twitter:site" />
-        <meta content="@luthfikml_" name="twitter:creator" />
-        <meta expr:content="data:blog.metaDescription" name="twitter:description" />
-        <b:if cond="data:blog.postImageUrl">
-          <meta expr:content="data:blog.postImageUrl" name="twitter:image" />
-          <meta expr:content="data:blog.pageName" name="twitter:image:alt" />
-          <b:else>
-            <b:if cond="data:blog.postImageThumbnailUrl">
-              <meta expr:content="data:blog.postThumbnailUrl" name="twitter:image" />
-              <meta expr:content="data:blog.pageName" name="twitter:image:alt" />
-              <b:else>
-                <meta content="https://avatars.githubusercontent.com/u/90312645?v=4" name="twitter:image" />
-                <meta expr:content="data:blog.title" name="twitter:image:alt" />
-              </b:else>
-            </b:if>
-          </b:else>
-        </b:if>
       </Head>
       <Navbar />
       <div className="content pt-20">
