@@ -14,7 +14,7 @@ export default function ShowPortfolio({ portfolio }) {
       <Head>
         <title>{portfolio.name} - Luthfi's Hideout</title>
         <meta property="og:title" content={portfolio.name} />
-        <meta property="og:description" content={portfolio.description} />
+        <meta property="description" content={portfolio.description} />
         <meta property="og:type" content="Portfolio" />
         <meta property="og:image" content={portfolio.img} />
         <meta content="summary_large_image" name="twitter:card" />
