@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useEffect } from 'react';
-import axios from 'axios';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
-import posts from '../../data/posts.json';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-const Posts = () => {
+const Posts = ({ posts }) => {
   return (
     <>
       <Head>
@@ -19,11 +19,11 @@ const Posts = () => {
           <p className="font-serif italic text-slate-100">Blog dan beberapa catatan yang saya gunakan dalam pengembangan Web</p>
         </div>
         {posts.map((post) => (
-          <div class="mb-4">
-            <Link href={`/posts/${post.slug}`} className="font-poppins text-xl">
-              {post.title}
+          <div className="mb-4" key={post.slug}>
+            <Link href={`/posts/${post.slug}`} className="font-poppins text-2xl">
+              {post.frontMatter.title}
             </Link>
-            <div className="my-1 font-thin italic text-slate-600">{post.category_id}</div>
+            <p class="text-slate-600 italic">{post.frontMatter.date}</p>
             <hr />
           </div>
         ))}
@@ -31,6 +31,26 @@ const Posts = () => {
       </div>
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  const files = fs.readdirSync(path.join('posts'));
+
+  const posts = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8');
+    const { data: frontMatter } = matter(markdownWithMeta);
+
+    return {
+      frontMatter,
+      slug: filename.split('.')[0],
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
 };
 
 export default Posts;

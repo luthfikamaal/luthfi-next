@@ -10,7 +10,7 @@
     font-family: 'Inter', sans-serif;
   }
   .content {
-    @apply px-3 md:w-2/3 md:mx-auto;
+    @apply px-3 md:w-1/2 md:mx-auto;
   }
   h1 {
     @apply text-2xl;

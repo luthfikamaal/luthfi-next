@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24">
+      <nav className="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24 border-b border-solid border-slate-200">
         <div className="mx-auto flex items-center">
           <div className="mr-10 rounded-md bg-blue-600 py-2 px-3 text-xl font-semibold">
             <Link className="text-xl text-white" href={'/'}>
