@@ -23,7 +23,7 @@ const Posts = ({ posts }) => {
             <Link href={`/posts/${post.slug}`} className="font-poppins text-2xl">
               {post.frontMatter.title}
             </Link>
-            <p class="text-slate-600 italic">{post.frontMatter.date}</p>
+            <p className="text-slate-600 italic">{post.frontMatter.date}</p>
             <hr />
           </div>
         ))}
