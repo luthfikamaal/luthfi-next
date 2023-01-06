@@ -27,10 +27,10 @@ export default function ShowPortfolio({ portfolio }) {
           Stacks: <span class="font-normal text-slate-800">{portfolio.stacks}</span>
         </div>
         <div class="mb-3 flex">
-          <a href="portfolio.url.website" target="_blank" class="mr-1 rounded-md bg-blue-500 px-2 py-1 text-white transition-all hover:bg-blue-600">
+          <a href={portfolio.url.website} target="_blank" class="mr-1 rounded-md bg-blue-500 px-2 py-1 text-white transition-all hover:bg-blue-600">
             <i class="bi bi-globe2"></i>
           </a>
-          <a href="portfolio.url.github" target="_blank" class="rounded-md bg-slate-800 px-2 py-1 text-white transition-all hover:bg-slate-900">
+          <a href={portfolio.url.github} target="_blank" class="rounded-md bg-slate-800 px-2 py-1 text-white transition-all hover:bg-slate-900">
             <i class="bi bi-github"></i>
           </a>
         </div>

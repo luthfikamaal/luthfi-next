@@ -12,21 +12,21 @@ const Portfolio = () => {
       </Head>
       <Navbar />
       <div className="content pt-20">
-        <div class="mb-5 rounded-md bg-blue-600 py-2 text-center">
-          <h1 class="font-poppins mb-1 text-2xl font-semibold text-white">Projects</h1>
-          <p class="font-serif italic text-slate-100">My recent projects</p>
+        <div className="mb-5 rounded-md bg-blue-600 py-2 text-center">
+          <h1 className="font-poppins mb-1 text-2xl font-semibold text-white">Projects</h1>
+          <p className="font-serif italic text-slate-100">My recent projects</p>
         </div>
-        <div class="mb-3 w-full">
+        <div className="mb-3 w-full">
           {portfolios.map((portfolio) => (
-            <div class="animate__animated animate__zoomInRight mx-auto mb-5 md:text-center" key={portfolio.slug}>
-              <img src={portfolio.img} class="mb-3 w-full rounded-md shadow-md md:mx-auto md:w-2/3" />
-              <div class="mb-2">
-                <span class="rounded-md bg-blue-500 px-2 py-1 text-white">{portfolio.type}</span>
+            <div className="animate__animated animate__zoomInRight mx-auto mb-5 md:text-center" key={portfolio.slug}>
+              <img src={portfolio.img} className="mb-3 w-full rounded-md shadow-md md:mx-auto md:w-2/3" />
+              <div className="mb-2">
+                <span className="rounded-md bg-blue-500 px-2 py-1 text-white">{portfolio.type}</span>
               </div>
-              <h2 class="font-poppins text-xl">
+              <h2 className="font-poppins text-xl">
                 <Link href={`/portfolio/${portfolio.slug}`}>{portfolio.name}</Link>
               </h2>
-              <p class="mb-3 font-serif italic text-slate-700">{portfolio.description}</p>
+              <p className="mb-3 font-serif italic text-slate-700">{portfolio.description}</p>
             </div>
           ))}
         </div>
