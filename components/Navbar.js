@@ -22,7 +22,6 @@ const Navbar = () => {
 
   useEffect(() => {
     showNavLinks();
-    console.log(router);
   }, [router]);
 
   return (
