@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { MDXRemote } from 'next-mdx-remote';
 
-const ShowPost = ({ fronMatter: { title, date }, mdxSource }) => {
+const ShowPost = ({ fronMatter: { title, date, tags }, mdxSource }) => {
   const titlePost = `${title} - Luthfi's Hideout`;
 
   return (
@@ -20,8 +20,12 @@ const ShowPost = ({ fronMatter: { title, date }, mdxSource }) => {
         <title>{titlePost}</title>
       </Head>
       <Navbar />
-      <div className="content pt-20" id="mdx">
+      <div className="content pt-20 mb-3" id="mdx">
+        <h1>{title}</h1>
         <MDXRemote {...mdxSource} />
+        <hr />
+        <div></div>
+        <Footer className="mt-3" />
       </div>
     </>
   );

@@ -1,0 +1,51 @@
+#mdx h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#mdx h1 {
+  font-size: 2.5rem;
+}
+#mdx h2 {
+  font-size: 2rem;
+}
+
+#mdx h3 {
+  font-size: 1.75rem;
+}
+#mdx h4 {
+  font-size: 1.5rem;
+}
+#mdx h5 {
+  font-size: 1.25rem;
+}
+#mdx h6 {
+  font-size: 1rem;
+}
+
+#mdx {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#mdx pre {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #eaeaea;
+  overflow-x: scroll;
+}
+
+#mdx p code {
+  padding: 1px 3px;
+  background-color: #eaeaea;
+  border-radius: 3px;
+}
