@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import portfolios from '../../data/portfolios.json';
 import Navbar from '../../components/Navbar';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Footer from '../../components/Footer';
 import matter from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
@@ -20,7 +17,7 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
         <title>{titlePost}</title>
         <meta property="description" content={date} />
         <meta property="og:type" content="Post" />
-        <meta property="og:image" content={`/assets/img/${image}`} />
+        <meta property="og:image" content={`https://luthfikml.vercel.app/assets/img/${image}`} />
       </Head>
       <Navbar />
       <div className="content pt-20 mb-3" id="mdx">
