@@ -15,6 +15,7 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
     <>
       <Head>
         <title>{titlePost}</title>
+        <meta property="og:title" content={titlePost} />
         <meta property="description" content={date} />
         <meta property="og:type" content="Post" />
         <meta property="og:image" content={`https://luthfikml.vercel.app/assets/img/${image}`} />
