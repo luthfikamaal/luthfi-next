@@ -18,6 +18,9 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
     <>
       <Head>
         <title>{titlePost}</title>
+        <meta property="description" content={date} />
+        <meta property="og:type" content="Post" />
+        <meta property="og:image" content={`/assets/img/${image}`} />
       </Head>
       <Navbar />
       <div className="content pt-20 mb-3" id="mdx">
