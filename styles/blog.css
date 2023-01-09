@@ -49,3 +49,7 @@ h6 {
   background-color: #eaeaea;
   border-radius: 3px;
 }
+
+#mdx p {
+  margin-bottom: 0.5rem;
+}

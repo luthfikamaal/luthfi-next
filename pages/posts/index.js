@@ -16,17 +16,20 @@ const Posts = ({ posts }) => {
       <div className="content pt-20">
         <div className="mb-5 rounded-md bg-blue-600 p-2 text-center">
           <h1 className="font-poppins mb-1 text-2xl font-semibold text-white">Posts</h1>
-          <p className="font-serif italic text-slate-100">Blog dan beberapa catatan yang saya gunakan dalam pengembangan Web</p>
+          <p className="font-serif italic text-slate-100">Tulisan kecil</p>
         </div>
-        {posts.map((post) => (
-          <div className="mb-4" key={post.slug}>
-            <Link href={`/posts/${post.slug}`} className="font-poppins text-2xl">
-              {post.frontMatter.title}
-            </Link>
-            <p className="text-slate-600 italic">{post.frontMatter.date}</p>
-            <hr />
-          </div>
-        ))}
+        <div class="grid grid-col-1 md:grid-cols-2 gap-x-3 gap-y-4">
+          {posts.map((post) => (
+            <div key={post.slug}>
+              <img className="w-full rounded-lg mb-2" src={`/assets/img/${post.image}`} />
+              <Link href={`/posts/${post.slug}`} className="font-poppins text-2xl">
+                {post.title}
+              </Link>
+              <p className="text-xs text-slate-700">{post.date}</p>
+            </div>
+          ))}
+        </div>
+        <hr />
         <Footer />
       </div>
     </>
@@ -41,7 +44,7 @@ export const getStaticProps = async () => {
     const { data: frontMatter } = matter(markdownWithMeta);
 
     return {
-      frontMatter,
+      ...frontMatter,
       slug: filename.split('.')[0],
     };
   });

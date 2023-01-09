@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { MDXRemote } from 'next-mdx-remote';
 
-const ShowPost = ({ fronMatter: { title, date, tags }, mdxSource }) => {
+const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
   const titlePost = `${title} - Luthfi's Hideout`;
 
   return (
@@ -22,6 +22,7 @@ const ShowPost = ({ fronMatter: { title, date, tags }, mdxSource }) => {
       <Navbar />
       <div className="content pt-20 mb-3" id="mdx">
         <h1>{title}</h1>
+        <img className="w-full rounded-lg mb-3" src={`/assets/img/${image}`} />
         <MDXRemote {...mdxSource} />
         <hr />
         <div></div>
