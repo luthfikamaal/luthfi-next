@@ -18,7 +18,7 @@ const Posts = ({ posts }) => {
           <h1 className="font-poppins mb-1 text-2xl font-semibold text-white">Posts</h1>
           <p className="font-serif italic text-slate-100">Tulisan kecil</p>
         </div>
-        <div class="grid grid-col-1 md:grid-cols-2 gap-x-3 gap-y-4">
+        <div className="grid grid-col-1 md:grid-cols-2 gap-x-3 gap-y-4">
           {posts.map((post) => (
             <div key={post.slug}>
               <img className="w-full rounded-lg mb-2" src={`/assets/img/${post.image}`} />
