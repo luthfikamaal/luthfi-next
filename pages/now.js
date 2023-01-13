@@ -25,7 +25,7 @@ const Now = () => {
           <a href="https://www.wahudamon.com/" target="_blank" className="text-blue-900 underline transition-all">
             Afwa Bagas Wahuda
           </a>{' '}
-          dan mas
+          dan mas{' '}
           <a href="https://gading.dev/id/now" className="text-blue-900 underline transition-all" target="_blank">
             Sutan Gading Fadhillah Nasution
           </a>
@@ -79,7 +79,7 @@ const Now = () => {
           <div className="font-serif">
             <ul>
               <li>- Javascript dan PHP</li>
-              <li>- Laravel, Vue, Express.js</li>
+              <li>- Laravel, VueJS/NuxtJS, ReactJS/NextJS, Express.js</li>
               <li>- TailwindCSS</li>
             </ul>
           </div>
