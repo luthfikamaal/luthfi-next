@@ -18,7 +18,7 @@ const Portfolio = () => {
         </div>
         <div className="mb-3 w-full">
           {portfolios.map((portfolio) => (
-            <div className="animate__animated animate__zoomInRight mx-auto mb-5 md:text-center" key={portfolio.slug}>
+            <div className="mx-auto mb-5 md:text-center" key={portfolio.slug}>
               <img src={portfolio.img} className="mb-3 w-full rounded-md shadow-md md:mx-auto md:w-2/3" />
               <div className="mb-2">
                 <span className="rounded-md bg-blue-500 px-2 py-1 text-white">{portfolio.type}</span>

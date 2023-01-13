@@ -14,13 +14,13 @@ const Now = () => {
       </Head>
       <Navbar />
       <div className="content pt-20">
-        <div className="animate__lightSpeedInLeft animate__animated mb-3">
+        <div className=" mb-3">
           <span>
             <span className="font-poppins mr-2 text-2xl font-semibold">Now</span>
             <span className="ml-2 font-serif italic text-slate-600">Menjawab pertanyaan (jika ada) 'Lagi sibuk apa sekarang?'</span>
           </span>
         </div>
-        <div className="animate__lightSpeedInLeft animate__animated mb-6 font-serif">
+        <div className=" mb-6 font-serif">
           Terinspirasi dari mas{' '}
           <a href="https://www.wahudamon.com/" target="_blank" className="text-blue-900 underline transition-all">
             Afwa Bagas Wahuda
@@ -31,7 +31,7 @@ const Now = () => {
           </a>
           . Halaman ini dibuat untuk menjelaskan <b>apa saja kesibukannya sekarang?</b>
         </div>
-        <div className="animate__lightSpeedInLeft animate__animated mb-6">
+        <div className=" mb-6">
           <h1 className="font-poppins mb-3 text-2xl">☕️ Aktivitas</h1>
           <div className="font-serif">
             <p>Sedang menempuh pendidikan S-1 Matematika UIN Sunan Kalijaga. Selain itu, saya juga melakukan beberapa aktivitas, seperti</p>
@@ -53,7 +53,7 @@ const Now = () => {
             </ul>
           </div>
         </div>
-        <div className="animate__lightSpeedInLeft animate__animated mb-6">
+        <div className=" mb-6">
           <h1 className="font-poppins mb-3 text-2xl">📘 Buku yang dibaca</h1>
           <div className="font-serif">
             <ul>
@@ -74,7 +74,7 @@ const Now = () => {
             </ul>
           </div>
         </div>
-        <div className="animate__lightSpeedInLeft animate__animated mb-6">
+        <div className=" mb-6">
           <h1 className="font-poppins mb-3 text-2xl">💡 Teknologi yang digunakan</h1>
           <div className="font-serif">
             <ul>
@@ -84,7 +84,7 @@ const Now = () => {
             </ul>
           </div>
         </div>
-        <div className="animate__lightSpeedInLeft animate__animated mb-6">
+        <div className=" mb-6">
           <h1 className="font-poppins mb-3 text-2xl">
             🛠 <i>Software</i> yang digunakan
           </h1>
