@@ -40,8 +40,10 @@ h6 {
   border-radius: 8px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #eaeaea;
+  background-color: #23241f;
+  color: rgb(238, 238, 238);
   overflow-x: scroll;
+  font-size: 14px;
 }
 
 #mdx p code {
