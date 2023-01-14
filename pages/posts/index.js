@@ -21,7 +21,7 @@ const Posts = ({ posts }) => {
         <div className="grid grid-col-1 md:grid-cols-2 gap-x-3 gap-y-4">
           {posts.map((post) => (
             <div key={post.slug}>
-              <img className="w-full rounded-lg mb-2" src={`/assets/img/${post.image}`} />
+              <img className="w-full rounded-lg mb-2" src={`/assets/img/thumbnails/${post.image}`} />
               <Link href={`/posts/${post.slug}`} className="font-poppins text-2xl">
                 {post.title}
               </Link>

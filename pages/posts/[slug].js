@@ -23,7 +23,6 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
       <Navbar />
       <div className="content pt-20 mb-3" id="mdx">
         <h1>{title}</h1>
-        <img className="w-full rounded-lg mb-3" src={`/assets/img/${image}`} />
         <MDXRemote {...mdxSource} />
         <hr />
         <div></div>
