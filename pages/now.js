@@ -42,7 +42,7 @@ const Now = () => {
               <li>- membaca buku,</li>
               <li>
                 - menulis{' '}
-                <Link href={'/post'} className="text-blue-900 underline transition-all">
+                <Link href={'/posts'} className="text-blue-900 underline transition-all">
                   blog
                 </Link>
                 , dan
@@ -71,6 +71,12 @@ const Now = () => {
                 </a>{' '}
                 karya Iqbal Aji Daryono.
               </li>
+              <li>
+                -{' '}
+                <a href="https://www.google.com/search?q=Kitab+Anti+Bodoh" target="_blank" className="text-blue-900 hover:underline">
+                  Kitab Anti Bodoh
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -79,8 +85,8 @@ const Now = () => {
           <div className="font-serif">
             <ul>
               <li>- Javascript dan PHP</li>
-              <li>- Laravel, VueJS/NuxtJS, ReactJS/NextJS, Express.js</li>
-              <li>- TailwindCSS</li>
+              <li>- Laravel, NodeJS, VueJS/NuxtJS, ReactJS/NextJS, Express.js</li>
+              <li>- TailwindCSS, Chakra UI, etc</li>
             </ul>
           </div>
         </div>

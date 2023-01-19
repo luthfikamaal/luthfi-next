@@ -55,3 +55,8 @@ h6 {
 #mdx p {
   margin-bottom: 0.5rem;
 }
+
+#mdx a {
+  color: #1714bb;
+  text-decoration: underline;
+}
