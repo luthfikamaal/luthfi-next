@@ -22,10 +22,11 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
       </Head>
       <Navbar />
       <div className="content pt-20 mb-3" id="mdx">
-        <h1>{title}</h1>
-        <MDXRemote {...mdxSource} />
-        <hr />
-        <div></div>
+        <div id="mdx">
+          <h1>{title}</h1>
+          <MDXRemote {...mdxSource} />
+          <hr />
+        </div>
         <Footer className="mt-3" />
       </div>
     </>
