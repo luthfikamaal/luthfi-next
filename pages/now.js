@@ -85,7 +85,7 @@ const Now = () => {
           <div className="font-serif">
             <ul>
               <li>- Javascript dan PHP</li>
-              <li>- Laravel, NodeJS, VueJS/NuxtJS, ReactJS/NextJS, Express.js</li>
+              <li>- Laravel, NodeJS, ReactJS/NextJS, Express.js</li>
               <li>- TailwindCSS, Chakra UI, etc</li>
             </ul>
           </div>
