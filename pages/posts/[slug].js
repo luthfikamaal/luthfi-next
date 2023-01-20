@@ -26,14 +26,13 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
         <meta property="og:image" content={`https://luthfikml.vercel.app/assets/img/${image}`} />
       </Head>
       <Navbar />
-      <div className="content pt-20 pb-14 mb-3">
+      <div className="content pt-20 mb-3">
         <div id="mdx">
           <h1>{title}</h1>
           <MDXRemote {...mdxSource} />
           <hr />
         </div>
-        <Footer className="mt-3" />
-        <div className="fixed inset-x-0 bottom-0 px-3 py-4">
+        <div className="sticky inset-x-0 bottom-0 px-3 py-4">
           <div className="content flex">
             <div className="py-2 px-3 rounded-full mx-auto bg-white border border-solid border-slate-200 shadow-sm flex gap-x-2">
               <button onClick={() => setIsLike((isLike) => !isLike)} className="px-2 py-1 transition-all hover:bg-slate-200 rounded-full">
@@ -45,6 +44,7 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
             </div>
           </div>
         </div>
+        <Footer className="mt-3" />
       </div>
     </>
   );
