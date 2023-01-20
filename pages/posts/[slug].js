@@ -37,10 +37,10 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
           <div className="content flex">
             <div className="py-2 px-3 rounded-full mx-auto bg-white border border-solid border-slate-200 shadow-sm flex gap-x-2">
               <button onClick={() => setIsLike((isLike) => !isLike)} className="px-2 py-1 transition-all hover:bg-slate-200 rounded-full">
-                {!isLike ? <i className="text-2xl bi bi-heart"></i> : <i className="text-2xl bi bi-heart-fill text-red-500"></i>}
+                {!isLike ? <i className="text-3xl bi bi-heart"></i> : <i className="text-3xl bi bi-heart-fill text-red-500"></i>}
               </button>
               <button className="ml-auto rounded-full hover:bg-slate-200 px-2 py-1 transition-all">
-                <i className="text-2xl bi bi-share-fill"></i>
+                <i className="text-3xl bi bi-share-fill"></i>
               </button>
             </div>
           </div>
