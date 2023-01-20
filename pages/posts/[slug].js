@@ -26,7 +26,7 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
         <meta property="og:image" content={`https://luthfikml.vercel.app/assets/img/${image}`} />
       </Head>
       <Navbar />
-      <div className="content pt-20 pb-12 mb-3">
+      <div className="content pt-20 pb-14 mb-3">
         <div id="mdx">
           <h1>{title}</h1>
           <MDXRemote {...mdxSource} />
