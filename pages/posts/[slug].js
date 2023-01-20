@@ -35,7 +35,7 @@ const ShowPost = ({ fronMatter: { title, date, tags, image }, mdxSource }) => {
         <Footer className="mt-3" />
         <div className="fixed inset-x-0 bottom-0 px-3 py-4">
           <div className="content flex">
-            <div className="py-1 px-2 rounded-full mx-auto bg-white border border-solid border-slate-200 shadow-sm flex gap-x-2">
+            <div className="py-2 px-3 rounded-full mx-auto bg-white border border-solid border-slate-200 shadow-sm flex gap-x-2">
               <button onClick={() => setIsLike((isLike) => !isLike)} className="px-2 py-1 transition-all hover:bg-slate-200 rounded-full">
                 {isLike ? <i className="text-2xl bi bi-hand-thumbs-up"></i> : <i className="text-2xl bi bi-hand-thumbs-up-fill text-blue-600"></i>}
               </button>
