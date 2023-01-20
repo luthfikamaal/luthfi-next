@@ -4,8 +4,19 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [isShowed, setIsShowed] = useState(false);
+  const [theme, setTheme] = useState('light');
 
   const router = useRouter();
+
+  const changeTheme = () => {
+    if (theme == 'light') {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const showNavLinks = () => {
     let navLink = document.querySelector('#nav-links');
@@ -20,16 +31,32 @@ const Navbar = () => {
     }
   };
 
+  const setDarkMode = () => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
+
   useEffect(() => {
+    const themeMode = localStorage.getItem('theme');
+    if (!themeMode) {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      setTheme(themeMode);
+    }
     showNavLinks();
+    setDarkMode();
   }, [router]);
 
   return (
     <>
-      <nav className="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24 border-b border-solid border-slate-200">
+      <nav className="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md  sm:px-5 md:px-24 border-b border-solid border-slate-200">
         <div className="mx-auto flex items-center">
           <div className="mr-10 rounded-md bg-blue-600 py-2 px-3 text-xl font-semibold">
-            <Link className="text-xl text-white" href={'/'}>
+            <Link className="text-xl dark:text-black text-white" href={'/'}>
               LuthfiK.
             </Link>
           </div>
@@ -44,7 +71,10 @@ const Navbar = () => {
               <Link href={'/posts'}>Posts</Link>
             </li>
           </ul>
-          <div className="ml-auto">
+          <div className="ml-auto flex">
+            <button onClick={changeTheme} className="btn mr-2 rounded-md bg-blue-600 text-white">
+              {theme == 'dark' ? <i className="bi bi-moon-fill"></i> : <i className="bi bi-sun-fill"></i>}
+            </button>
             <button className="btn inline-block btn-primary md:hidden" onClick={showNavLinks}>
               <i className="bi bi-list"></i>
             </button>

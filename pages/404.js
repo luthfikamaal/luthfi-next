@@ -10,7 +10,7 @@ const Custom404 = () => {
       </Head>
       <Navbar />
       <div className="content pt-20">
-        <h1 class="text-center text-2xl">404 Not Found</h1>
+        <h1 className="text-center text-2xl">404 Not Found</h1>
         <Footer />
       </div>
     </>
